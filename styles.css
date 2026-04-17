@@ -341,11 +341,33 @@ body {
 
 .hero__logos {
   position: absolute;
-  left: 24px;
+  left: 0;
+  right: 0;
   top: 48px;
+  overflow: hidden;
+  /* Fade edges for a smooth entry/exit */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+
+.hero__logos-track {
+  display: flex;
+  width: max-content;
+  animation: logo-marquee 32s linear infinite;
+}
+
+.hero__logos-track:hover {
+  animation-play-state: paused;
+}
+
+.hero__logos-strip {
   display: flex;
   align-items: center;
-  gap: 16px;
+}
+
+@keyframes logo-marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .hero__logo-item {
