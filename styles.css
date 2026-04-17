@@ -212,10 +212,18 @@ body {
   text-decoration: none;
   border-radius: 6px;
   overflow: hidden;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
 }
 
 .hero__btn-primary:hover {
   background: #1860c4;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 112, 221, 0.45);
+}
+
+.hero__btn-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 .hero__btn-primary img {
@@ -238,10 +246,16 @@ body {
   white-space: nowrap;
   text-decoration: none;
   border-radius: 6px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
 }
 
 .hero__btn-secondary:hover {
-  background: rgba(31, 112, 221, 0.05);
+  background: rgba(31, 112, 221, 0.08);
+  transform: translateY(-2px);
+}
+
+.hero__btn-secondary:active {
+  transform: translateY(0);
 }
 
 /* ─── Hero Illustration ─── */
