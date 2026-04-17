@@ -110,3 +110,359 @@ body {
 .navbar__btn-contact:hover {
   background: #1860c4;
 }
+
+/* ─── Hero Section ─────────────────────────────────────────────────────────── */
+
+.hero {
+  position: relative;
+  background: #ffffff;
+  min-height: 921px;
+  overflow: hidden;
+}
+
+/* Dark-to-white gradient, covers bottom 470px */
+.hero__gradient {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1280px;
+  height: 470px;
+  background: linear-gradient(
+    to top,
+    rgb(1, 65, 108)   0%,
+    rgb(17, 77, 117)  6.25%,
+    rgb(33, 89, 126)  12.5%,
+    rgb(49, 101, 136) 18.75%,
+    rgb(65, 113, 145) 25%,
+    rgb(80, 124, 154) 31.25%,
+    rgb(96, 136, 163) 37.5%,
+    rgb(112, 148, 172) 43.75%,
+    rgb(128, 160, 181) 50%,
+    rgb(144, 172, 191) 56.25%,
+    rgb(160, 184, 200) 62.5%,
+    rgb(176, 196, 209) 68.75%,
+    rgb(191, 207, 218) 75%,
+    rgb(207, 219, 227) 81.25%,
+    rgb(223, 231, 237) 87.5%,
+    rgb(239, 243, 246) 93.75%,
+    rgb(255, 255, 255) 100%
+  );
+  pointer-events: none;
+}
+
+/* Centered 1280px layout container */
+.hero__inner {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 722px;
+}
+
+/* ─── Hero Text ─── */
+
+.hero__text {
+  position: absolute;
+  left: 23.5px;
+  top: 175px;
+  width: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero__title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1.68px;
+  color: #0f172a;
+}
+
+.hero__desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1f2937;
+}
+
+.hero__cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 189px;
+  padding: 12px 24px;
+  background: #1f70dd;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  white-space: nowrap;
+  text-decoration: none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.hero__btn-primary:hover {
+  background: #1860c4;
+}
+
+.hero__btn-primary img {
+  flex-shrink: 0;
+}
+
+.hero__btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 189px;
+  padding: 12px 24px;
+  border: 1px solid #1f70dd;
+  color: #1f70dd;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  white-space: nowrap;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.hero__btn-secondary:hover {
+  background: rgba(31, 112, 221, 0.05);
+}
+
+/* ─── Hero Illustration ─── */
+
+.hero__illustration {
+  position: absolute;
+  left: 613.5px;
+  top: 129px;
+  width: 643px;
+  height: 484px;
+}
+
+.hero__card-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 590px;
+  height: 418px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.hero__card-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
+.hero__card-mobile {
+  position: absolute;
+  left: 444px;
+  top: 136px;
+  width: 199px;
+  height: 348px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+
+.hero__card-mobile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ─── Social Proof ─── */
+
+.hero__proof {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 722px;
+  height: 199px;
+  overflow: hidden;
+}
+
+.hero__proof-inner {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.hero__proof-title {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  color: #ffffff;
+  width: 922px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.hero__logos {
+  position: absolute;
+  left: 24px;
+  top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero__logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  padding: 16px 20px;
+  flex-shrink: 0;
+}
+
+/* CSS-mask technique: logo shape is the mask, background-color is the fill */
+.hero__logo-mask {
+  background-color: #f9f9fb;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.hero__logo-mask--white {
+  background-color: #ffffff;
+}
+
+/* Direct-image logos */
+.hero__logo-img {
+  max-width: 140px;
+  max-height: 68px;
+  object-fit: contain;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+/* Koperasi TNB composite layout */
+.hero__logo-koperasi {
+  position: relative;
+  width: 140px;
+  height: 40px;
+}
+
+.logo-koperasi-text {
+  position: absolute;
+  left: 61px;
+  top: 5px;
+  width: 79px;
+  height: 31px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ─── Individual logo mask dimensions & URLs ─── */
+
+.logo-sunway {
+  width: 140px;
+  height: 52px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/6b6acbdd-76b6-466b-87dc-c50efbbe0c2c');
+  mask-image: url('https://www.figma.com/api/mcp/asset/6b6acbdd-76b6-466b-87dc-c50efbbe0c2c');
+}
+
+.logo-kpj {
+  width: 140px;
+  height: 29px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/3049f4ab-2ffe-4271-a260-f7bdfeb991f5');
+  mask-image: url('https://www.figma.com/api/mcp/asset/3049f4ab-2ffe-4271-a260-f7bdfeb991f5');
+}
+
+.logo-senheng {
+  width: 140px;
+  height: 17px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/7e3e6f0a-b853-44ff-9c59-cc47e1d8090e');
+  mask-image: url('https://www.figma.com/api/mcp/asset/7e3e6f0a-b853-44ff-9c59-cc47e1d8090e');
+}
+
+.logo-koperasi-shield {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 53px;
+  height: 40px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/28b1a2e9-9df1-45f8-a026-d3d68598a9e8');
+  mask-image: url('https://www.figma.com/api/mcp/asset/28b1a2e9-9df1-45f8-a026-d3d68598a9e8');
+}
+
+.logo-singer {
+  width: 140px;
+  height: 26px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/9eb4d3e5-d9a8-42d3-96f9-d5851fe4d6a4');
+  mask-image: url('https://www.figma.com/api/mcp/asset/9eb4d3e5-d9a8-42d3-96f9-d5851fe4d6a4');
+}
+
+.logo-lyreco {
+  width: 140px;
+  height: 62px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/bc46e14f-45c9-49b3-b4bc-300394242059');
+  mask-image: url('https://www.figma.com/api/mcp/asset/bc46e14f-45c9-49b3-b4bc-300394242059');
+}
+
+.logo-8 {
+  width: 140px;
+  height: 51px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/b255d3b7-22af-4bff-84a4-9b9f73eab8cd');
+  mask-image: url('https://www.figma.com/api/mcp/asset/b255d3b7-22af-4bff-84a4-9b9f73eab8cd');
+}
+
+.logo-12 {
+  width: 100px;
+  height: 100px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/a21ade8b-256b-43d7-83a5-b6251d20c9fb');
+  mask-image: url('https://www.figma.com/api/mcp/asset/a21ade8b-256b-43d7-83a5-b6251d20c9fb');
+}
+
+.logo-13 {
+  width: 97px;
+  height: 90px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/ca4061df-2a73-46e8-b2c6-37c692679201');
+  mask-image: url('https://www.figma.com/api/mcp/asset/ca4061df-2a73-46e8-b2c6-37c692679201');
+}
+
+.logo-15 {
+  width: 140px;
+  height: 41px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/5841f36e-260e-40a5-a9ce-3cf1f7dc8186');
+  mask-image: url('https://www.figma.com/api/mcp/asset/5841f36e-260e-40a5-a9ce-3cf1f7dc8186');
+}
+
+.logo-16 {
+  width: 140px;
+  height: 22px;
+  -webkit-mask-image: url('https://www.figma.com/api/mcp/asset/d921c53f-e398-4618-a2a8-60cd3b0514a5');
+  mask-image: url('https://www.figma.com/api/mcp/asset/d921c53f-e398-4618-a2a8-60cd3b0514a5');
+}
