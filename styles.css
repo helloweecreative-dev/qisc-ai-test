@@ -124,9 +124,8 @@ body {
 .hero__gradient {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1280px;
+  left: 0;
+  right: 0;
   height: 470px;
   background: linear-gradient(
     to top,
